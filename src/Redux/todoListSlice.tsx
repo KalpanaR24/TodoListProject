@@ -10,6 +10,7 @@ error:null,
 todoStatus:' '
 }
 export const postList=createAsyncThunk('list/todoList',async(data:object)=>{
+    console.log("hey");
     const postTodoList= await axios.post('http://localhost:8010/list/todoList',data)
     return postTodoList?.data
 
