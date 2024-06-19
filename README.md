@@ -57,8 +57,11 @@ run the command ssh -i "key-value_pair.pem" ec2-user@your ipv4 public adress
 we are able to connect to the ec2 instance and try to click on connect in ec2 instance
 it will open a aws cmd
 run follwoing commands
+    sudo su - #-to navigate to root directory 
     yum update -y
     yum install -y httpd
     systemctl status httpd
     mkdir aws_assg3
     cd aws_assg3
+    wget github clone url
+    ls -lrt
