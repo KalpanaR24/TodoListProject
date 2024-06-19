@@ -57,6 +57,9 @@ run the command ssh -i "key-value_pair.pem" ec2-user@your ipv4 public adress
 we are able to connect to the ec2 instance and try to click on connect in ec2 instance
 it will open a aws cmd
 run follwoing commands
+    //npm install -g http-server
+    //npx http-server -p 5000 ./build
+
     sudo su - #-to navigate to root directory 
     yum update -y
     yum install -y httpd
