@@ -60,11 +60,18 @@ run follwoing commands
     //npm install -g http-server
     //npx http-server -p 5000 ./build
 
-    sudo su - #-to navigate to root directory 
-    yum update -y
-    yum install -y httpd
-    systemctl status httpd
-    mkdir aws_assg3
-    cd aws_assg3
-    wget github clone url
-    ls -lrt
+    1.launch ec2 instance
+2.generate .pem file and store it
+3.launch, it will start running
+4.connect through cmd, go to your path where you have your .pem file and run below command  ssh -i "Spring24.pem" ec2-user@3.145.156.217
+5.now open running instance and connect 
+6. It will launch ec2 console
+7.run below commands 
+sudo su -  # Switch to root user
+yum update -y  # Update installed packages
+yum install -y httpd  # Install Apache HTTP Server
+systemctl start httpd  # Start Apache
+systemctl enable httpd  # Enable Apache to start on boot
+systemctl status httpd  # Check status of Apache
+cd /var/www/html
+sudo yum install git -y

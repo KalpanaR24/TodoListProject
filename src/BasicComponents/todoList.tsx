@@ -6,21 +6,21 @@ import { Response } from '../CommonComponents/types';
 export const TodoList = () => {
     const [response,setResponse]= useState<Response[]>([])
     const { state } = useTodoListContext()
+    const status=["ToDo","WIP","Done"]
   useEffect(()=>{
     setResponse(state?.list)
   },[state])
     return (
         <div className="grid grid-cols-3 gap-4 m-6">
-           <div>
-                <label className='text-sm font-bold'>TODO List</label>
-                <TaskList getAllToDo={response}/>
-           </div>
-            <div>
-                <label className='text-sm font-bold'>WIP</label>
-            </div>
-            <div>
-                <label className='text-sm font-bold'>Done</label>
-            </div>
+
+            {status.map((data) => {
+                return (
+                    <div>
+                        <label className='text-sm font-bold ml-6'>{data}</label>
+                        <TaskList getAllToDo={response} status={data}/>
+                    </div>
+                )
+            })}
         </div>
     )
 }

@@ -33,3 +33,12 @@ export interface ListType{
     error:string|null,
     todoStatus:string
 }
+
+export type UpdateTodo={
+    task: string,
+    status: string,
+    id: number
+}
+export type spinner={
+    status?:boolean
+}

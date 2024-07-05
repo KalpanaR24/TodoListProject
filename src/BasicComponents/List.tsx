@@ -29,6 +29,7 @@ const List = () => {
                 <div className="px-4 py-2 bg-gray-800 rounded-t-lg dark:bg-gray-800">
                     <label className="block mb-2 text-sm font-medium text-white dark:text-white">Please Add your daily Tasks/TODO List</label>
                     <textarea id="message" rows={4} value={inputTodo}
+                        data-testid="inputTodo" 
                         onChange={(e) => setInputTodo(e.target.value)}
                         className="block p-2.5 w-full text-sm text-white bg-gray-700 rounded-lg border border-gray-600 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Write your thoughts here..."></textarea>
