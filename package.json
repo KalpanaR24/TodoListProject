@@ -44,17 +44,6 @@
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/index.js",
-      "!src/serviceWorker.js",
-      "!src/setupTests.js"
-    ],
-    "coverageReporters": [
-      "html",
-      "text"
-    ],
     "transformIgnorePatterns": [
       "/node_modules/(?!(axios)/)"
     ]

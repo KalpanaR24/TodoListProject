@@ -5,7 +5,6 @@ import { updateListSlice } from "../Redux/updateTodoListSlice";
 import { AppDispatch } from "../Redux/store";
 import { UpdateTodo } from "./types";
 import { Arrow, Delete } from "./Arrow";
-import { useState } from "react";
 
 export const TaskList = (props: any) => {
   const dispatch = useDispatch<AppDispatch>();
